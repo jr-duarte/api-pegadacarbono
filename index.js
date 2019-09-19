@@ -49,7 +49,7 @@ app.post('/corpo', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    res.send("<h1> API DO APS </h1> </br> <h1> Pegada de Carbono </h1>")
+    res.send("<h1> API DO APS </h1> </br> <h1> PEGADA DE CARBONO </h1>")
 })
 
 
