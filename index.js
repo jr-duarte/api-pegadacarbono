@@ -48,6 +48,10 @@ app.post('/corpo', (req, res) => {
 
 })
 
+app.get('/', (req, res) => {
+    res.send("<h1> API DO APS </h1>")
+})
+
 
 app.get('/clientes/relatorio', (req, res) => {
     res.send(`Cliente relatório: completo = ${req.query.completo} ano = ${req.query.ano}`)
