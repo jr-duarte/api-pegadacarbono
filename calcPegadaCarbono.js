@@ -58,8 +58,7 @@ function calcPegadaCarbono(energiaKwhMes,
         viagemInternacionalKmMes: viagemInternacionalKmMes,
         aterroResiduosKgDia:aterroResiduosKgDia,
 
-        TotalEmissaoTonCO2: TotalEmissaoTonCO2,
-        Teste: "teste"
+        TotalEmissaoTonCO2: TotalEmissaoTonCO2
     }
 }
 
