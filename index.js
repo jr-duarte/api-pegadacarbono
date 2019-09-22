@@ -32,36 +32,34 @@ app.post('/pegadacarbono', (req, res) => {
     res.send(result)
 })
 
-
-
-app.post('/corpo', (req, res) => {
-    // let corpo = ''
-    //req.on('data', function (parte) {
-    //    corpo += parte
-    // })
-
-    // req.on('end', function () {
-    //    res.json(corpo)
-    //})
-
-    res.send(req.body)
-
-})
-
 app.get('/', (req, res) => {
     res.send("<h1> API DO APS </h1> </br> <h1> PEGADA DE CARBONO </h1>")
 })
 
 
-app.get('/clientes/relatorio', (req, res) => {
+app.listen(3000, () => {
+    console.log('Iniciado')
+})
+
+
+
+//Exemplo de requisição e resposta usando query
+/*app.get('/clientes/relatorio', (req, res) => {
     res.send(`Cliente relatório: completo = ${req.query.completo} ano = ${req.query.ano}`)
-})
+})*/
 
-app.get('/clientes/:id', (req, res) => {
+
+
+//Exemplo de requisição e resposta com parametros 
+/*app.get('/clientes/:id', (req, res) => {
     res.send(`Cliente ${req.params.id} selecionado!`)
-})
+})*/
 
-app.get('/opa', (req, res) => {
+
+
+
+//Exemplo de requisição e resposta
+/*app.get('/opa', (req, res) => {
 
     res.json({
 
@@ -77,15 +75,12 @@ app.get('/opa', (req, res) => {
     })
 
 
-    // res.json({
-    //  name: "Iphone 11",
-    //     price:  6000.00,
-    //  discount: 0.12
-    //})
+    res.json({
+        name: "Iphone 11",
+        price: 6000.00,
+        discount: 0.12
+    })
 
-    //res.send("Estou bem!")
-})
+    res.send("Estou bem!")
+})*/
 
-app.listen(3000, () => {
-    console.log('Iniciado')
-})
