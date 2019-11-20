@@ -20,9 +20,9 @@
   node index.js
   ```
 Após esse comando iremos receber a mensagem "Iniciado" isso indica que tudo deu certo e já podemos acessar o nosso servidor localmente através do endereço:
-[http://localhost:3000](http://localhost:3000)
+[http://localhost:3000](http://localhost:3000).
 
-5 - Agora chegou a hora de realizarmos o teste do nosso projeto para isso podemos usar o Postman ou algum outro programa de sua preferência.
+5 - Agora chegou a hora de realizarmos o teste da nossa API para isso podemos usar o Postman ou algum outro programa de sua preferência.
 
 5.1 - Faremos a requisição ao nosso servidor local utilizando o método POST através do endereço "http://localhost:3000/pegadaCarbono".
 
