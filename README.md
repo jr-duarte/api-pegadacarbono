@@ -30,7 +30,7 @@ Após esse comando iremos receber a mensagem "Iniciado" isso indica que tudo deu
 
 5.3 - No Body usaremos o corpo abaixo, onde cada item representa um parâmetro da requisção para que o servidor calcule o gasto total de Co2.
 <p>{</P>
-	<p>"energiaKwhMes": 10,</p>
+	<p>"energiaKwhMes": 1,</p>
 	<p>"gasCozinhaKgMes":1,</p>
 	<p>"gasNaturalM3Mes":1,</p>
 	<p>"veicPGasolinaKmMes":1,</p>
