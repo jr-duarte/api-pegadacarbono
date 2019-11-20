@@ -29,25 +29,25 @@ Após esse comando iremos receber a mensagem "Iniciado" isso indica que tudo deu
 5.2 - No Headers utilizamos o Content-Type - Application/json
 
 5.3 - No Body usaremos o corpo abaixo, onde cada item representa um atributo da requisção para que o servidor calcule o gasto total de Co2.
-{
-	"energiaKwhMes": 10,
-	"gasCozinhaKgMes":1,
-	"gasNaturalM3Mes":1,
-	"veicPGasolinaKmMes":1,
-	"veicMGasolinaKmMes":1,
-	"veicGGasolinaKmMes":1,
-	"motoGasolinaKmMes":1,
-	"veicPEtanolKmMes":1,
-	"veicMEtanolKmMes":1,
-	"veicGEtanolKmMes":1,
-	"motoEtanolKmMes":0,
-	"carroDieselKmMes":1,
-	"onibusDieselUrbanoKmMes":1,
-	"onibusDieselRodoviaKmMes":1,
-	"carroGnvKmMes":1,
-	"viagemNacionalKmMes":1,
-	"viagemInternacionalKmMes":1,
-	"aterroResiduosKgDia":1
-}
+<p>{</P>
+	<p>"energiaKwhMes": 10,</p>
+	<p>"gasCozinhaKgMes":1,</p>
+	<p>"gasNaturalM3Mes":1,</p>
+	<p>"veicPGasolinaKmMes":1,</p>
+	<p>"veicMGasolinaKmMes":1,</p>
+	<p>"veicGGasolinaKmMes":1,</p>
+	<p>"motoGasolinaKmMes":1,</p>
+	<p>"veicPEtanolKmMes":1,</p>
+	<p>"veicMEtanolKmMes":1,</p>
+	<p>"veicGEtanolKmMes":1,</p>
+	<p>"motoEtanolKmMes":0,</p>
+	<p>"carroDieselKmMes":1,</p>
+	<p>"onibusDieselUrbanoKmMes":1,</p>
+	<p>"onibusDieselRodoviaKmMes":1,</p>
+	<p>"carroGnvKmMes":1,</p>
+	<p>"viagemNacionalKmMes":1,</p>
+	<p>"viagemInternacionalKmMes":1,</p>
+	<p>"aterroResiduosKgDia":1</p>
+<p>}</p>
 
 5.4 - Realizamos um Send e verificamos a resposta obtida do nosso servidor que será o quantidade de Co2 de cada item e no final a quantidade total gasta de Co2.
