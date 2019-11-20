@@ -1,4 +1,4 @@
-# pegadaCarbono
+# INSTRUÇÕES DA USO
 
 1 - Verifique se o node está instalado em sua máquina através do comando:
   ```javascript
