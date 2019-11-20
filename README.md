@@ -28,7 +28,7 @@ Após esse comando iremos receber a mensagem "Iniciado" isso indica que tudo deu
 
 5.2 - No Headers utilizamos o Content-Type - Application/json
 
-5.3 - No Body usaremos o corpo abaixo, onde cada item representa um atributo da requisção para que o servidor calcule o gasto total de Co2.
+5.3 - No Body usaremos o corpo abaixo, onde cada item representa um parâmetro da requisção para que o servidor calcule o gasto total de Co2.
 <p>{</P>
 	<p>"energiaKwhMes": 10,</p>
 	<p>"gasCozinhaKgMes":1,</p>
