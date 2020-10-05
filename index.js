@@ -2,9 +2,11 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const calcPegadaCarbono = require("./calcPegadaCarbono");
+const cors = require("cors");
 
 //app.use(bodyParser.text())
 //app.use(bodyParser.urlencoded({ extended: true }))
+app.use(cors());
 app.use(bodyParser.json());
 
 app.post("/pegadacarbono", (req, res) => {
