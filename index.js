@@ -37,7 +37,7 @@ app.get("/", (req, res) => {
   res.send("<h1> API DO APS </h1> </br> <h1> PEGADA DE CARBONO </h1>");
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Server iniciado");
 });
 
