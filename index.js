@@ -1,62 +1,53 @@
-const express = require('express')
-const app = express()
-const bodyParser = require('body-parser')
-const calcPegadaCarbono = require('./calcPegadaCarbono')
+const express = require("express");
+const app = express();
+const bodyParser = require("body-parser");
+const calcPegadaCarbono = require("./calcPegadaCarbono");
 
 //app.use(bodyParser.text())
 //app.use(bodyParser.urlencoded({ extended: true }))
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
-app.post('/pegadacarbono', (req, res) => {
+app.post("/pegadacarbono", (req, res) => {
+  result = calcPegadaCarbono(
+    req.body.energiaKwhMes,
+    req.body.gasCozinhaKgMes,
+    req.body.gasNaturalM3Mes,
+    req.body.veicPGasolinaKmMes,
+    req.body.veicMGasolinaKmMes,
+    req.body.veicGGasolinaKmMes,
+    req.body.motoGasolinaKmMes,
+    req.body.veicPEtanolKmMes,
+    req.body.veicMEtanolKmMes,
+    req.body.veicGEtanolKmMes,
+    req.body.motoEtanolKmMes,
+    req.body.carroDieselKmMes,
+    req.body.onibusDieselUrbanoKmMes,
+    req.body.onibusDieselRodoviaKmMes,
+    req.body.carroGnvKmMes,
+    req.body.viagemNacionalKmMes,
+    req.body.viagemInternacionalKmMes,
+    req.body.aterroResiduosKgDia
+  );
+  res.send(result);
+});
 
-    result = calcPegadaCarbono(
-        req.body.energiaKwhMes,
-        req.body.gasCozinhaKgMes,
-        req.body.gasNaturalM3Mes,
-        req.body.veicPGasolinaKmMes,
-        req.body.veicMGasolinaKmMes,
-        req.body.veicGGasolinaKmMes,
-        req.body.motoGasolinaKmMes,
-        req.body.veicPEtanolKmMes,
-        req.body.veicMEtanolKmMes,
-        req.body.veicGEtanolKmMes,
-        req.body.motoEtanolKmMes,
-        req.body.carroDieselKmMes,
-        req.body.onibusDieselUrbanoKmMes,
-        req.body.onibusDieselRodoviaKmMes,
-        req.body.carroGnvKmMes,
-        req.body.viagemNacionalKmMes,
-        req.body.viagemInternacionalKmMes,
-        req.body.aterroResiduosKgDia
-    )
-    res.send(result)
-})
-
-app.get('/', (req, res) => {
-    res.send("<h1> API DO APS </h1> </br> <h1> PEGADA DE CARBONO </h1>")
-})
-
+app.get("/", (req, res) => {
+  res.send("<h1> API DO APS </h1> </br> <h1> PEGADA DE CARBONO </h1>");
+});
 
 app.listen(3000, () => {
-    console.log('Iniciado')
-})
-
-
+  console.log("Server iniciado");
+});
 
 //Exemplo de requisição e resposta usando query
 /*app.get('/clientes/relatorio', (req, res) => {
     res.send(`Cliente relatório: completo = ${req.query.completo} ano = ${req.query.ano}`)
 })*/
 
-
-
-//Exemplo de requisição e resposta com parametros 
+//Exemplo de requisição e resposta com parametros
 /*app.get('/clientes/:id', (req, res) => {
     res.send(`Cliente ${req.params.id} selecionado!`)
 })*/
-
-
-
 
 //Exemplo de requisição e resposta
 /*app.get('/opa', (req, res) => {
@@ -83,4 +74,3 @@ app.listen(3000, () => {
 
     res.send("Estou bem!")
 })*/
-
